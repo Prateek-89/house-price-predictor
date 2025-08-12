@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="house.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 House Price Predictor</h1>
+        <div class="form-box">
+            <label>Area :</label>
+            <input type="number" id="area" placeholder="Enter area in square feet">
+
+            <label>Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" placeholder="Enter bedrooms">
+
+            <label>City:</label>
+            <select id="city">
+                <option value="Mumbai">mumbai</option>
+                <option value="Chhibramau">Chhibramau</option>
+                <option value="Delhi">Delhi</option>
+                
+            </select>
+
+            <button onclick="predictPrice()">Predict Price</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="house.js"></script>
+</body>
+</html>
